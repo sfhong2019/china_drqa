@@ -1,0 +1,81 @@
+.box {
+  width: 800px;
+  margin: 100px auto;
+  border: 1px solid #f0eeee;
+  padding: 40px;
+}
+
+.box .box-content {
+  width: 800px;
+
+}
+
+.cont-title .tip {
+  font-size: 18px;
+}
+
+.cont-title .ran-sample {
+  color: #1296db;
+  cursor: pointer;
+  border-bottom: 1px solid #1296db;
+}
+
+.cont-textarea {
+  height: 200px;
+  margin: 20px auto;
+  padding: 40px;
+  border: 1px solid gray;
+}
+
+.cont-textarea #textarea-text {
+  width: 90%;
+  height: 150px;
+  background: none;
+  border: none;
+  outline: none;
+  resize: none;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ccc;
+}
+
+form label {
+  margin-left: 30px;
+}
+
+
+.btn span {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 130px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn #play {
+  background: #1296db;
+  color: #fff;
+  margin-right: 100px;
+}
+
+.btn #down {
+  border: 1px solid #1296db;
+  color: #1296db;
+}
+
+.btn #down img {
+  vertical-align: middle;
+}
+
+.selection>div,
+.selection form {
+  margin-bottom: 30px;
+}
+
+#playImg,
+#downImg {
+  margin-right: 15px;
+}

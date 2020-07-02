@@ -1,0 +1,2 @@
+nohup: ignoring input
+./run_api.sh: line 4: workon: command not found

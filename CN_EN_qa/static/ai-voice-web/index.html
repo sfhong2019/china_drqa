@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/voice.css">
+</head>
+
+<script src="js/jQuery-2.1.4.min.js"></script>
+<script src="js/voice.js"></script>
+
+<body>
+
+<audio style="display: none" id="audio_player" controls="controls">
+<!--  <audio id="audio_player" controls="controls"> -->
+<!-- {#        <source id="audio_src" src="/static/audio.mp3" type="audio/mp3" />#}-->
+        <source id="audio_src" src="
+" type="audio/mp3" />
+  </audio>
+
+
+  <div class="box">
+    <div class="box-content">
+      <div class="cont-title">
+        <span class="tip">请输入需要合成的文字：</span>
+        <span class="ran-sample">随机示例</span>
+      </div>
+      <div class="cont-textarea">
+        <textarea type="text" id="textarea-text" value="" />欢迎使用云润AI开放平台</textarea>
+        <div>
+          <span class="textarea-text-len">12</span>
+          <span>/200</span>
+        </div>
+      </div>
+      <div class="selection">
+        <form action="" method="get">
+          发声人
+          <label><input name="role" type="radio" value="0" />普通女生 </label>
+          <label><input name="role" checked type="radio" value="1" />普通男生 </label>
+          <label><input name="role" type="radio" value="3" />逍遥（武侠） </label>
+          <label><input name="role" type="radio" value="4" />萌妹 </label>
+        </form>
+        <div class="speed">
+          <span>语速</span>
+          <input type="range" id="speedVal" name="points" min="0" max="15" />
+          <span>X5</span>
+        </div>
+        <div class="tones">
+          <span>音调</span>
+          <input type="range" id="tonesVal" name="points" min="0" max="15" />
+          <span>5</span>
+        </div>
+        <div class="volume">
+          <span>音量</span>
+          <input type="range" id="volumeVal" name="points" min="0" max="15" />
+          <span>5</span>
+        </div>
+      </div>
+      <div class="btn">
+        <span id="play">
+          <img src="images/play.png" id="playImg" alt="">
+          <b id="play-text">播放</b>
+        </span>
+        <span id="down"><img src="images/down.png" id="downImg" alt="">下载</span>
+        <a href="http://img4.imgtn.bdimg.com/it/u=3403442990,1245929430&fm=26&gp=0.jpg" download="xxx.jpg">测试下载</a>
+      </div>
+    </div>
+  </div>
+
+ <!--<audio style="display: none" id="audio_player" controls="controls">-->
+        <!--<source src="http://127.0.0.1:8000/static/audio.mp3" type="audio/mp3" />-->
+ <!--</audio>-->
+
+    <script>
+
+    </script>
+</body>
+
+</html>
+<script src="js/jQuery-2.1.4.min.js"></script>
+<script src="js/voice.js"></script>

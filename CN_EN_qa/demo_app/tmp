@@ -1,0 +1,127 @@
+************* Module demo_app.views
+C: 98, 0: Line too long (112/100) (line-too-long)
+C:104, 0: Line too long (113/100) (line-too-long)
+C:115, 0: Line too long (103/100) (line-too-long)
+C:231, 0: Exactly one space required around assignment
+            res=speechRecognition(audio_file, language)
+               ^ (bad-whitespace)
+C:236, 0: Exactly one space required around assignment
+            status=dict_get(res,"status", '')
+                  ^ (bad-whitespace)
+C:236, 0: Exactly one space required after comma
+            status=dict_get(res,"status", '')
+                               ^ (bad-whitespace)
+C:240, 0: Exactly one space required around assignment
+            message=dict_get(res,"message", '')
+                   ^ (bad-whitespace)
+C:240, 0: Exactly one space required after comma
+            message=dict_get(res,"message", '')
+                                ^ (bad-whitespace)
+C:243, 0: Exactly one space required after comparison
+                if status =="ok":
+                          ^^ (bad-whitespace)
+C:247, 0: Exactly one space required around assignment
+                    data=dict_get(res,"data", '')
+                        ^ (bad-whitespace)
+C:247, 0: Exactly one space required after comma
+                    data=dict_get(res,"data", '')
+                                     ^ (bad-whitespace)
+C:251, 0: Exactly one space required around assignment
+                    to_lang=dict_get(data,"to_lang", '')
+                           ^ (bad-whitespace)
+C:251, 0: Exactly one space required after comma
+                    to_lang=dict_get(data,"to_lang", '')
+                                         ^ (bad-whitespace)
+C:259, 0: Exactly one space required around assignment
+                    input_text=dict_get(data,"result", '')
+                              ^ (bad-whitespace)
+C:259, 0: Exactly one space required after comma
+                    input_text=dict_get(data,"result", '')
+                                            ^ (bad-whitespace)
+C:294, 0: Exactly one space required around assignment
+        start3=datetime.datetime.now()
+              ^ (bad-whitespace)
+C:295, 0: Line too long (101/100) (line-too-long)
+C:295, 0: Exactly one space required around assignment
+        file_url=VoiceSynthesizer(text, speedVal, tonesVal, volumeVal, role,args.file_translate_path)
+                ^ (bad-whitespace)
+C:295, 0: Exactly one space required after comma
+        file_url=VoiceSynthesizer(text, speedVal, tonesVal, volumeVal, role,args.file_translate_path)
+                                                                           ^ (bad-whitespace)
+C:296, 0: Exactly one space required after comma
+        print("返回的结果：",file_url)
+                      ^ (bad-whitespace)
+C:297, 0: Exactly one space required after comma
+        print("返回的类型",type(file_url))
+                     ^ (bad-whitespace)
+C:298, 0: Exactly one space required around assignment
+        start4=datetime.datetime.now()
+              ^ (bad-whitespace)
+W:301, 0: Bad indentation. Found 11 spaces, expected 12 (bad-indentation)
+C:301, 0: Exactly one space required around assignment
+           status="the audio file is null"
+                 ^ (bad-whitespace)
+W:303, 0: Bad indentation. Found 11 spaces, expected 12 (bad-indentation)
+C:305, 0: Exactly one space required after comma
+        data = [{"audioFileUrl":file_url},{"dentifiedText":input_text},{"translatedText":text}]
+                                         ^ (bad-whitespace)
+C:305, 0: Exactly one space required after comma
+        data = [{"audioFileUrl":file_url},{"dentifiedText":input_text},{"translatedText":text}]
+                                                                      ^ (bad-whitespace)
+C:307, 0: Wrong hanging indentation (remove 4 spaces).
+                "status": status,
+            |   ^ (bad-continuation)
+C:308, 0: Wrong hanging indentation (remove 4 spaces).
+                "data":data,
+            |   ^ (bad-continuation)
+C:322, 0: Exactly one space required after comma
+    def post(self,request):
+                 ^ (bad-whitespace)
+C:  1, 0: Missing module docstring (missing-docstring)
+C: 16, 0: Invalid constant name "aip" (invalid-name)
+C: 37, 4: Missing method docstring (missing-docstring)
+C: 41, 8: Invalid variable name "speedVal" (invalid-name)
+C: 42, 8: Invalid variable name "tonesVal" (invalid-name)
+C: 43, 8: Invalid variable name "volumeVal" (invalid-name)
+R: 37, 4: Method could be a function (no-self-use)
+W: 69,-1: String statement has no effect (pointless-string-statement)
+C: 78, 4: Missing method docstring (missing-docstring)
+C: 88, 8: Invalid variable name "speedVal" (invalid-name)
+C: 89, 8: Invalid variable name "tonesVal" (invalid-name)
+C: 90, 8: Invalid variable name "volumeVal" (invalid-name)
+C:109,42: Invalid variable name "f" (invalid-name)
+C:110,16: Invalid variable name "a" (invalid-name)
+C:119,12: Invalid variable name "e" (invalid-name)
+R: 78, 4: Method could be a function (no-self-use)
+W:131,-1: String statement has no effect (pointless-string-statement)
+C:134, 4: Missing method docstring (missing-docstring)
+W:134,19: Unused argument 'request' (unused-argument)
+R:134, 4: Method could be a function (no-self-use)
+W:150,-1: String statement has no effect (pointless-string-statement)
+C:151, 0: Invalid class name "xiaojieView" (invalid-name)
+C:153, 4: Missing method docstring (missing-docstring)
+W:171,15: Catching too general exception Exception (broad-except)
+C:171, 8: Invalid variable name "e" (invalid-name)
+W:174,12: Unnecessary pass statement (unnecessary-pass)
+W:171, 8: Unused variable 'e' (unused-variable)
+R:153, 4: Method could be a function (no-self-use)
+W:191,-1: String statement has no effect (pointless-string-statement)
+C:194, 4: Missing method docstring (missing-docstring)
+R:194, 4: Too many local variables (22/15) (too-many-locals)
+C:225,37: Invalid variable name "f" (invalid-name)
+W:265,15: Catching too general exception Exception (broad-except)
+W:262,19: Catching too general exception Exception (broad-except)
+C:262,12: Invalid variable name "e" (invalid-name)
+C:265, 8: Invalid variable name "e" (invalid-name)
+C:289, 8: Invalid variable name "speedVal" (invalid-name)
+C:290, 8: Invalid variable name "tonesVal" (invalid-name)
+C:291, 8: Invalid variable name "volumeVal" (invalid-name)
+R:194, 4: Method could be a function (no-self-use)
+W:318,-1: String statement has no effect (pointless-string-statement)
+C:322, 4: Missing method docstring (missing-docstring)
+W:  4, 0: Unused import socket (unused-import)
+W: 13, 0: Unused text_to_pinyin imported from utlis.function (unused-import)
+
+------------------------------------------------------------------
+Your code has been rated at 4.52/10 (previous run: 9.93/10, -5.41)
+
